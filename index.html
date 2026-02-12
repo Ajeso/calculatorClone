@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <main>
+        <div class="calculator-container">
+
+            <!-- Display Screen -->
+            <div class="calculator-display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+
+            <!-- Button Grid -->
+            <div class="calculator-buttons">
+
+                <!-- Row 1: Delete | AC | % | ÷ -->
+                <button class="button function" data-type="delete">⌫</button>
+                <button class="button function" data-type="clear">AC</button>
+                <button class="button function" data-type="percent">%</button>
+                <button class="button operator" data-operator="divide">÷</button>
+
+                <!-- Row 2: 7 8 9 × -->
+                <button class="button number" data-number="7">7</button>
+                <button class="button number" data-number="8">8</button>
+                <button class="button number" data-number="9">9</button>
+                <button class="button operator" data-operator="multiply">×</button>
+
+                <!-- Row 3: 4 5 6 − -->
+                <button class="button number" data-number="4">4</button>
+                <button class="button number" data-number="5">5</button>
+                <button class="button number" data-number="6">6</button>
+                <button class="button operator" data-operator="subtract">−</button>
+
+                <!-- Row 4: 1 2 3 + -->
+                <button class="button number" data-number="1">1</button>
+                <button class="button number" data-number="2">2</button>
+                <button class="button number" data-number="3">3</button>
+                <button class="button operator" data-operator="add">+</button>
+
+                <!-- Row 5: +/- 0 . = -->
+                <button class="button function" data-type="sign">+/-</button>
+                <button class="button number" data-number="0">0</button>
+                <button class="button number" data-number=".">.</button>
+                <button class="button operator" data-operator="equals">=</button>
+
+            </div> <!-- End of Buttons -->
+
+        </div>
+    </main>
+
+</body>
+<script src="main.js" defer></script>
+
+</html>
